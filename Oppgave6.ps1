@@ -14,7 +14,9 @@ Write-Host $svar #Her skriver me ut svaret til brukaren i ein lesbar måte
 
 set-location \ #Her setter me lokasjonen til root
 
-set-location .\utbetaling #Her går me til utbetaling folderen
+new-item "utbetaling" -itemtype Directory #Lag utbetaling mappen
+
+set-location .\utbetaling #Her går me til utbetaling mappen
 
 $filnamn = Read-Host "Hva hvil du at filen skal hette?" #Her spør me ka de vil at tekst filen skal hette
 
